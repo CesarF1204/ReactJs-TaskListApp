@@ -36,3 +36,74 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: 'Roboto';
+}
+table {
+  border-collapse: collapse;
+  margin: auto;
+  box-shadow: 8px 8px 8px rgba(0,0,0,0.5);
+  font-weight: bold;
+  margin-top: 20px;
+  width: 600px;
+  border: 1px solid white;
+}
+th, td {
+  border: none;
+  padding: 10px;
+  
+}
+th {
+  border: 1px solid white;
+}
+td {
+  border-bottom: 1px solid white;
+}
+input[type='text'] {
+  background: none;
+  color: white;
+  border: 1px solid teal;
+  padding: 5px 6px;
+  width: 230px;
+  border-radius: 4px;
+}
+label {
+  vertical-align: middle;
+}
+input[type='text']:focus {
+  outline: none;
+  background: white;
+  color: black;
+}
+.add-item-btn {
+  border: 1px solid black;
+  margin-left: 5px;
+  padding: 8px 20px;
+  box-shadow: 3px 3px #000;
+  background-color: #3366ff;
+  color: white;
+  cursor: pointer;
+}
+.add-item-btn:hover {
+  transform: scale(1.06);
+  transition: 0.3s ease;
+}
+#actions {
+  width: 200px;
+}
+#check_done {
+  margin: 0 20px;
+
+}
+#check_done:hover {
+  color: green;
+  cursor: pointer;
+}
+#delete_task:hover {
+  color: red;
+  cursor: pointer;
+}
+.done-task-container > tr {
+  text-decoration: line-through red 3px;
+}
