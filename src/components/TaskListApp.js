@@ -67,7 +67,7 @@ class TaskListApp extends React.Component {
                 </div>
                 <div id="table-container">
                 {/* Pending Tasks Table */}
-                {pendingTask == '' ? 'No Pending Task' :
+                {pendingTask == '' ? <p>No Pending Task</p> :
                     <table border="1">
                         <thead>
                             <tr>
@@ -80,7 +80,7 @@ class TaskListApp extends React.Component {
                     </table>
                 }
                 {/* Done Tasks Table */}
-                {doneTask == '' ? null :
+                {doneTask == '' ? <p>No Done task</p> :
                     <table border="1">
                         <thead>
                             <tr>
