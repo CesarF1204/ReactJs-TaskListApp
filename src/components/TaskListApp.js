@@ -66,7 +66,7 @@ const TaskListApp = (props) => {
             </div>
             <div id="table-container">
             {/* Pending Tasks Table */}
-            {pendingTasks == '' ? <p>No Pending Task</p> :
+            {pendingTasks.length === 0 ? <p>No Pending Task</p> :
                 <table>
                     <thead>
                         <tr>
@@ -79,7 +79,7 @@ const TaskListApp = (props) => {
                 </table>
             }
             {/* Done Tasks Table */}
-            {doneTasks == '' ? <p>No Done Task</p> :
+            {doneTasks.length === 0 ? <p>No Done Task</p> :
                 <table>
                     <thead>
                         <tr>
