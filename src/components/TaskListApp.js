@@ -25,18 +25,12 @@ const TaskListApp = (props) => {
         let tasksCopy = [...tasks];
         tasksCopy.push(newTask);
         console.log(tasksCopy);
-        // this.setState({
-        //     tasks: tasksCopy
-        // });
         setTasks(tasksCopy);
     }
     const deleteTask = (task) => {
         let tasksCopy = [...tasks];
         tasksCopy = tasksCopy.filter(i => i.id !== task.id);
         console.log(tasksCopy);
-        // this.setState({
-        //     tasks: tasksCopy
-        // });
         setTasks(tasksCopy);
     }
     const doneTask = (task) => {
@@ -44,9 +38,6 @@ const TaskListApp = (props) => {
         let index = tasksCopy.findIndex( i => i.id === task.id);
         tasksCopy[index].status = 'done';
         console.log(tasksCopy);
-        // this.setState({
-        //     tasks: tasksCopy,
-        // });
         setTasks(tasksCopy);
     }
 

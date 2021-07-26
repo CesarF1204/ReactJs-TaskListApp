@@ -9,7 +9,7 @@ const AddTaskForm = (props) => {
             name: name,
             status: "pending"
         }
-        if(name === '') {
+        if(name.trim() === '') {
             alert('Please input a valid task.');
         } else {
             props.addTask(newTask);
